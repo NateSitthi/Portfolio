@@ -1,20 +1,40 @@
-.sidebar {
+#sidebar {
+    /* display:none; */
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     background: #FFA768;
-    position: relative;
-    
+    position: absolute;
+    padding-right: 84%;
+    /* padding-bottom: 100%; */
+    border-style: solid;
+    box-shadow: 3px 3px;
+
 }
-.sidebar:hover {
-    animation: test 3s;
-    animation-iteration-count: 1;
-}
+
 .index {
-    background: #02DEF3
+    background: #228dff
 }
-@keyframes test {
-    0% {left: 0%;}
-    /* 25% {left: 12.5%;}
-    75% {left: 25%;} */
-    100% {left: 50%;}
+
+#indivSide {
+    padding-right: 110%;
+    border-style: solid;
+}
+
+.w3-animate-left {
+
+    position: relative;
+    animation: animateleft 1s
+}
+
+@keyframes animateleft {
+    from {
+        left: -380px;
+        opacity: 0
+    }
+
+    to {
+        left: 1px;
+        opacity: 1
+    }
+
 }

@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="java.js"></script>
 </head>
 
 <body class="index">
-    <div class="sidebar">
-        <a href="AboutMe.html">About Me</a>
-        <a href="Portfolio.html">Portfolio</a>
-        <a href="Resume.html">Resume</a>
-        <a href="Contact.html">Contact</a>
+    <div id="sidebar">
+        <div id="indivSide" onclick="closeSidebar()"><strong>Return</strong></div>
+        <a id="indivSide" href="AboutMe.html">About Me</a>
+        <a id="indivSide" href="Portfolio.html">Portfolio</a>
+        <a id="indivSide" href="Resume.html">Resume</a>
+        <a id="indivSide" href="Contact.html">Contact</a>
     </div>
+    <div id="hamburg" onclick="openSidebar()">☰</Button>
     <section>
         <h1>Nate Sitthi</h1>
         <p>My name is Nate Sitthi, I am a student at Sunnyside High and Center for Advanced Research and Technology. I
@@ -25,5 +28,4 @@
         <a href="https://rexpeditions.netlify.app/rexpeditions/" target="_blank">Rexpeditions</a>
     </section>
 </body>
-
 </html>
