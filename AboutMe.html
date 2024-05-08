@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <script src="java.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-    <div class="sidebar">
-        <a href="AboutMe.html">About Me</a>
-        <a href="Portfolio.html">Portfolio</a>
-        <a href="Resume.html">Resume</a>
-        <a href="Contact.html">Contact</a>
+    <div id="sidebar">
+        <div id="indivSide" onclick="closeSidebar()"><strong>Return</strong></div>
+        <a id="indivSide" href="AboutMe.html">About Me</a>
+        <a id="indivSide" href="Portfolio.html">Portfolio</a>
+        <a id="indivSide" href="Resume.html">Resume</a>
+        <a id="indivSide" href="Contact.html">Contact</a>
     </div>
+    <div id="hamburg" onclick="openSidebar()">☰</div>
     <h1>About Me</h1>
     <ul>
         <li>17 Years Old</li>

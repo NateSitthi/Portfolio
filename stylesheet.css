@@ -1,6 +1,6 @@
 #sidebar {
-    /* display:none; */
-    display: flex;
+    display:none;
+    /* display: flex; */
     flex-flow: row;
     background: #FFA768;
     position: absolute;
@@ -8,22 +8,25 @@
     /* padding-bottom: 100%; */
     border-style: solid;
     box-shadow: 3px 3px;
-
+}
+#indivSide:hover{
+    background: #faba8d;
 }
 
-.index {
-    background: #228dff
+
+body {
+    background: #9bcbff
 }
 
 #indivSide {
-    padding-right: 105%;
+    padding-right: 116.3%;
     border-style: solid;
 }
 
 .w3-animate-left {
 
     position: relative;
-    animation: animateleft 1s
+    animation: animateleft 1s;
 }
 
 @keyframes animateleft {
@@ -37,4 +40,10 @@
         opacity: 1
     }
 
+}
+.introduction {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    text-align: center;
+    border-style: solid;
 }
