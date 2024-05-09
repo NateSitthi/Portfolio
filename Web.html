@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Projects</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="java.js"></script>
 </head>
 
 <body>
     <div id="sidebar">
-        <div id="indivSide" onclick="closeSidebar()"><strong>Return</strong></div>
+        <div id="indivSide" class="removeSidebar" onclick="closeSidebar()"><strong>Return</strong></div>
+        <a id="indivSide" href="index.html">Home</a>
         <a id="indivSide" href="AboutMe.html">About Me</a>
         <a id="indivSide" href="Portfolio.html">Portfolio</a>
         <a id="indivSide" href="Resume.html">Resume</a>
@@ -22,12 +24,13 @@
     <p>As I'm currently still learning, this page is constantly updating with websites
         that I have contributed towards.
     </p>
-    <section>
-         <a href="https://rexpeditions.netlify.app/rexpeditions/" target="_blank">Rexpeditions</a>
-        <p>Rexpeditions was the first project that I worked on with a few classmates, this taught me 
-            proper communication and how to fully cooperate.
+    <section class="rexpeditions">
+        <h2 class="rexH">Rexpeditions</h2>
+        <img class="img rexI" src="/Photos/T-rex.jpg" alt="T-rex image">
+        <p class="rexP">Rexpeditions was the first project that I worked on with a few classmates, this taught me
+            proper communication and how to fully cooperate. And was the first step into web building.
         </p>
-        <img class="img" src="/Photos/T-rex.jpg" alt="">
+        <a class="rexL" href="https://rexpeditions.netlify.app/rexpeditions/" target="_blank">View</a>
     </section>
 </body>
 

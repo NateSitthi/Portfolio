@@ -1,49 +1,133 @@
 #sidebar {
-    display:none;
+    display: none;
     /* display: flex; */
     flex-flow: row;
     background: #FFA768;
     position: absolute;
-    padding-right: 83%;
+    padding-right: 81%;
     /* padding-bottom: 100%; */
     border-style: solid;
     box-shadow: 3px 3px;
 }
-#indivSide:hover{
+
+#indivSide:hover {
     background: #faba8d;
 }
 
 
 body {
-    background: #9bcbff
+    /* background: #9bcbff; */
+    animation: fadeInAnimation 2s;
 }
 
 #indivSide {
-    padding-right: 116.3%;
+    padding-right: 82.5%;
     border-style: solid;
 }
 
-.w3-animate-left {
+.animate-left {
 
     position: relative;
-    animation: animateleft 1s;
+    animation: animateleft 2s;
 }
 
-@keyframes animateleft {
-    from {
-        left: -380px;
-        opacity: 0
-    }
-
-    to {
-        left: 1px;
-        opacity: 1
-    }
-
+.rexpeditions {
+    position: absolute;
+    left: 40%;
+    border-style: dashed;
+    padding-right: 50rem;
+    height: 25.9em;
+    border-radius: 10rem;
 }
+
+.rexpeditions:hover {
+    animation: trexglow 1s;
+    animation-fill-mode: forwards;
+}
+
+.rexP {
+    position: absolute;
+    top: 5rem;
+    width: 80%;
+    font-size: 1.5em;
+    margin-left: 59px;
+}
+
+.rexH {
+    position: absolute;
+    top: 1rem;
+    left: 24%;
+    width: 20%;
+    font-size: 1.5em;
+    margin-left: 100px;
+}
+
+.rexL {
+    position: absolute;
+    left: 22rem;
+    padding: 1rem 2rem 1rem 2rem;
+    bottom: 5rem;
+    font-size: large;
+    border-style: solid;
+    border-radius: 2rem;
+}
+
+
 .introduction {
     margin-left: 20rem;
     margin-right: 20rem;
     text-align: center;
     border-style: solid;
+}
+
+.rexI {
+    position: absolute;
+    width: 100%;
+    opacity: 50%;
+    border-radius: 10rem;
+    animation: trexglow 2s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animateleft {
+    0% {
+        left: -300px;
+        opacity: 0
+    }
+
+    100% {
+        left: 0;
+        opacity: 1
+    }
+}
+
+@keyframes removeSidebar {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+
+    to {
+        left: -300px;
+        opacity: 1;
+    }
+}
+
+@keyframes trexglow {
+    from {
+
+    }
+
+    to {
+        box-shadow: 0 0 50px 15px #48abe0;
+    }
 }
