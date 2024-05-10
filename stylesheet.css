@@ -8,6 +8,7 @@
     /* padding-bottom: 100%; */
     border-style: solid;
     box-shadow: 3px 3px;
+    z-index: 1;
 }
 
 #indivSide:hover {
@@ -16,14 +17,21 @@
 
 
 body {
-    /* background: #9bcbff; */
+    background: #9bcbff;
     animation: fadeInAnimation 2s;
 }
 
 #indivSide {
+    position: relative;
     padding-right: 82.5%;
     border-style: solid;
+    text-decoration: none;
 }
+#indivSide a {
+    position: fixed;
+    left: 50%;
+}
+
 
 .animate-left {
 
@@ -33,17 +41,18 @@ body {
 
 .rexpeditions {
     position: absolute;
-    left: 40%;
-    border-style: dashed;
+    border-style: solid;
     padding-right: 50rem;
-    height: 25.9em;
+    height: 26.2em;
     border-radius: 10rem;
+    translate: 20% 20%;
 }
 
 .rexpeditions:hover {
-    animation: trexglow 1s;
+    animation: glow 1s;
     animation-fill-mode: forwards;
 }
+
 
 .rexP {
     position: absolute;
@@ -51,15 +60,17 @@ body {
     width: 80%;
     font-size: 1.5em;
     margin-left: 59px;
+    z-index: auto;
 }
 
 .rexH {
     position: absolute;
     top: 1rem;
-    left: 24%;
+    left: 30%;
     width: 20%;
     font-size: 1.5em;
     margin-left: 100px;
+    z-index: 2;
 }
 
 .rexL {
@@ -70,8 +81,17 @@ body {
     font-size: large;
     border-style: solid;
     border-radius: 2rem;
+    text-decoration: none;
+    background-color: white;
+}
+.rexL:hover {
+    animation: glow 1s forwards;
 }
 
+.web {
+    position: relative;
+    margin-bottom: 20px;
+}
 
 .introduction {
     margin-left: 20rem;
@@ -87,6 +107,34 @@ body {
     border-radius: 10rem;
     animation: trexglow 2s;
 }
+
+.twistedMind {
+    position: absolute;
+    border-style: solid;
+    padding-right: 50rem;
+    height: 26.2em;
+    border-radius: 10rem;
+    translate: 130% 20%;
+
+}
+
+.twistedH {
+    position: fixed;
+    margin-left: 20rem;
+}
+
+.twistedP {
+    position: fixed;
+    top: 5rem;
+    width: 80%;
+    font-size: 1.5em;
+    margin-left: 59px;
+}
+
+.twistedMind:hover {
+    animation: glow 1s forwards;
+}
+
 
 @keyframes fadeInAnimation {
     0% {
@@ -122,12 +170,10 @@ body {
     }
 }
 
-@keyframes trexglow {
-    from {
-
-    }
+@keyframes glow {
+    from {}
 
     to {
-        box-shadow: 0 0 50px 15px #48abe0;
+        box-shadow: 0 0 50px 15px #000000;
     }
 }
