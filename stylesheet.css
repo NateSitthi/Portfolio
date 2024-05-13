@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+* {
+    font-family: 'Radio Canada Big';
+}
 #sidebar {
     display: none;
     /* display: flex; */
@@ -9,6 +15,13 @@
     border-style: solid;
     box-shadow: 3px 3px;
     z-index: 1;
+    overflow: hidden;
+}
+
+#hamburg {
+    position: absolute;
+    font-size: 80px;
+
 }
 
 #indivSide:hover {
@@ -27,6 +40,7 @@ body {
     border-style: solid;
     text-decoration: none;
 }
+
 #indivSide a {
     position: fixed;
     left: 50%;
@@ -84,6 +98,7 @@ body {
     text-decoration: none;
     background-color: white;
 }
+
 .rexL:hover {
     animation: glow 1s forwards;
 }
@@ -114,7 +129,7 @@ body {
     padding-right: 50rem;
     height: 26.2em;
     border-radius: 10rem;
-    translate: 125% 20%;
+    translate: 140% 20%;
 }
 
 .twistedH {
@@ -133,6 +148,7 @@ body {
 .twistedMind:hover {
     animation: glow 1s forwards;
 }
+
 .twistedMindPort {
     position: absolute;
     border-style: solid;
@@ -141,15 +157,47 @@ body {
     border-radius: 10rem;
     translate: 124% 130%;
 }
+
 .contactImg {
     position: relative;
     width: 40px;
-    translate: 250%;
-    bottom: 3rem;;
+    translate: -200%;
+    bottom: 3rem;
+}
+
+.emailImg {
+    left: -4rem;
 }
 .email {
-    left: 3rem;
+    position: absolute;
+    padding-left: 3rem;
 }
+
+.aboutMe p {
+    text-align: center;
+}
+.abtMe {
+    position: relative;
+    translate: 0% 10em;
+}
+.pill {
+    position: relative;
+    border-style: solid;
+    margin: auto;
+    width: 240px;
+    border-radius: 16px;
+    height: 50px;
+    margin-bottom: 2rem;
+    transition: .5s;
+}
+.pill:hover {
+    background-color: #fff;
+    
+}
+.linkedin{
+    width: 30%;
+}
+
 
 @keyframes fadeInAnimation {
     0% {
