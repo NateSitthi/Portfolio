@@ -45,7 +45,7 @@ body {
     padding-right: 50rem;
     height: 26.2em;
     border-radius: 10rem;
-    translate: 20% 20%;
+    translate: 14% 20%;
 }
 
 .rexpeditions:hover {
@@ -114,8 +114,7 @@ body {
     padding-right: 50rem;
     height: 26.2em;
     border-radius: 10rem;
-    translate: 130% 20%;
-
+    translate: 125% 20%;
 }
 
 .twistedH {
@@ -134,7 +133,23 @@ body {
 .twistedMind:hover {
     animation: glow 1s forwards;
 }
-
+.twistedMindPort {
+    position: absolute;
+    border-style: solid;
+    padding-right: 50rem;
+    height: 26.2em;
+    border-radius: 10rem;
+    translate: 124% 130%;
+}
+.contactImg {
+    position: relative;
+    width: 40px;
+    translate: 250%;
+    bottom: 3rem;;
+}
+.email {
+    left: 3rem;
+}
 
 @keyframes fadeInAnimation {
     0% {
