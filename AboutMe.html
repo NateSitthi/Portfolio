@@ -10,25 +10,35 @@
 </head>
 
 <body>
-    <div id="sidebar">
-        <div id="indivSide" onclick="closeSidebar()"><strong>Return</strong></div>
-        <a id="indivSide" href="index.html">Home</a>
-        <a id="indivSide" href="AboutMe.html">About Me</a>
-        <a id="indivSide" href="Portfolio.html">Portfolio</a>
-        <a id="indivSide" href="Resume.html">Resume</a>
-        <a id="indivSide" href="Contact.html">Contact</a>
-    </div>
+    <nav>
+        <div id="sidebar">
+            <div id="indivSide" onclick="closeSidebar()"><strong>Return</strong></div>
+            <a id="indivSide" href="index.html">
+                <p>Home</p>
+            </a>
+            <a id="indivSide" href="AboutMe.html">About Me</a>
+            <a id="indivSide" href="Portfolio.html">Portfolio</a>
+            <a id="indivSide" href="Resume.html">Resume</a>
+            <a id="indivSide" href="Contact.html">Contact</a>
+        </div>
+    </nav>
+
     <div id="hamburg" onclick="openSidebar()">☰</div>
-    <h1>About Me</h1>
-    <ul>
-        <li>17 Years Old</li>
-        <li>Experienced with JavaScript, HTML, and CSS.</li>
-        <li>Proficient with Adobe Premiere Pro and Adobe Photoshop.</li>
+    <h1 class="introduction">About Me</h1>
+    <ul class="list">
+        <img src="/Photos/CART-front-1024x765.jpg" alt="Image of CART school" class="cart">
+        <li class="asdf">17 Years Old</li>
+        <li class="asdf">Experienced with JavaScript, HTML, and CSS.</li>
+        <li class="asdf">Student at Center For Advanced Research and Technology and Sunnyside High School.</li>
+        <li class="asdf">Proficient with Adobe Premiere Pro and Adobe Photoshop.</li>
     </ul>
-    <p>On my free time I like to play video games, create OBS animations, and go snowboarding.</p>
-    <p>After High School, I plan to try and find a job instantly within the Technology or Media/Entertainment field.
-        I will have college as a secondary option and I could get a degree in Computer Science and Cybersecurity.
-    </p>
+    <section class="hobbies">
+        <p>On my free time I like to play video games, create OBS animations, and go snowboarding.</p>
+        <p>After High School, I plan to try and find a job instantly within the Technology or Media/Entertainment field.
+            I will have college as a secondary option and I could get a degree in Computer Science and Cybersecurity.
+        </p>
+    </section>
+
 </body>
 
 </html>
