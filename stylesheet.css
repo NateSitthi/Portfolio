@@ -4,7 +4,9 @@
 * {
     font-family: 'Radio Canada Big';
 }
+
 #sidebar {
+    width: calc(100/6)vw;
     position: absolute;
     display: none;
     /* display: flex; */
@@ -35,17 +37,18 @@ body {
 
 #indivSide {
     position: relative;
-    padding-right: 82.5%;
+    padding-right: 70.5%;
     border-style: solid;
     text-decoration: none;
     border-radius: 16px;
-    background:  #FFA768;
+    background: #FFA768;
     box-shadow: 3px 3px;
+
 }
 
 #indivSide a {
-    position: fixed;
-    left: 50%;
+    position: absolute;
+
 }
 
 
@@ -88,9 +91,27 @@ body {
     margin-left: 100px;
     z-index: 2;
 }
-.portWrite{
 
+.education {
+    position: absolute;
+    padding-bottom: 18rem;
+    top: 3rem;
 }
+
+.skills {
+    position: absolute;
+    padding-bottom: 12vw;
+    right: 20rem;
+    bottom: 20rem
+}
+
+.volunteer {
+    position: absolute;
+    padding-bottom: 12vw;
+    left: 20rem;
+    bottom: 39rem;
+}
+
 .rexL {
     position: absolute;
     left: 22rem;
@@ -101,7 +122,7 @@ body {
     border-radius: 2rem;
     text-decoration: none;
     background-color: white;
-    transition: 0,5s forwards;
+    transition: 0, 5s forwards;
 }
 
 .rexL:hover {
@@ -128,6 +149,7 @@ body {
     border-radius: 10rem;
     animation: trexglow 2s;
 }
+
 .twistedMind {
     position: absolute;
     border-style: solid;
@@ -136,11 +158,13 @@ body {
     border-radius: 10rem;
     translate: 140% 20%;
 }
-.removeLine{
+
+.removeLine {
     text-decoration-line: none;
     position: relative;
     margin-top: 15rem;
 }
+
 .headings2 .para2 {
     text-align: center;
     position: relative;
@@ -148,6 +172,7 @@ body {
     margin-bottom: 100px;
 
 }
+
 .twistedH {
     position: fixed;
     margin-left: 20rem;
@@ -173,6 +198,7 @@ body {
     border-radius: 10rem;
     translate: 124% 130%;
 }
+
 .essays {
     top: 3em;
     padding: 4rem;
@@ -185,6 +211,7 @@ body {
     margin-left: 3rem;
 
 }
+
 .contactImg {
     position: relative;
     width: 40px;
@@ -192,44 +219,53 @@ body {
     bottom: 3rem;
 
 }
+
 .otherProjects {
     position: absolute;
     margin-top: 25%;
     margin-left: 50%;
 }
+
 .emailImg {
     left: -4rem;
 }
+
 .email {
     position: absolute;
     padding-left: 3rem;
 }
+
 .writing {
     position: absolute;
     margin-left: 49%;
 }
-.web{
+
+.web {
     position: absolute;
     margin-top: 25%;
 }
+
 .aboutMe p {
     text-align: center;
 }
 
-.aboutMe{
+.aboutMe {
     text-overflow: ellipsis;
     width: 20px;
     padding-bottom: 1rem;
 }
+
 .aboutMe p h1 {
     position: relative;
     right: 3rem;
-    
+
 }
+
 .abtMe {
     position: relative;
     translate: 0% 10em;
 }
+
 .pill {
     position: relative;
     border-style: solid;
@@ -240,23 +276,28 @@ body {
     margin-bottom: 2rem;
     transition: .5s;
 }
+
 .pill:hover {
     background-color: #337ab7;
-    color: #fff; 
-    cursor: pointer; 
+    color: #fff;
+    cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-decoration: none; 
+    text-decoration: none;
 }
-.linkedin{
+
+.linkedin {
     width: 30%;
 }
+
 .web {
     width: 30px;
 }
+
 .info {
     position: absolute;
     height: 15rem;
 }
+
 .me {
     height: 15rem;
     position: absolute;
@@ -265,6 +306,7 @@ body {
     border-radius: 100%;
     width: 15;
 }
+
 .comp {
     border-style: solid;
     border-radius: 16px;
@@ -273,9 +315,10 @@ body {
     margin-left: 25%;
 
 }
+
 .list {
     border-style: solid;
-    display:flex;
+    display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
@@ -286,17 +329,20 @@ body {
     height: 30rem;
     border-radius: 16px;
 }
+
 .asdf {
     position: relative;
     bottom: 25rem;
     font-size: 20px;
 
 }
-.cart{
+
+.cart {
     opacity: 50%;
     position: relative;
     right: 3%;
 }
+
 .hobbies {
     position: absolute;
     text-align: center;
