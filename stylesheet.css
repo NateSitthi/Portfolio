@@ -8,6 +8,7 @@
     display: none;
     /* display: flex; */
     flex-flow: row;
+    justify-content: space-between;
     background: #FFA768;
     position: absolute;
     padding-right: 81%;
@@ -16,6 +17,7 @@
     box-shadow: 3px 3px;
     z-index: 1;
     overflow: hidden;
+    text-align: center;
 }
 
 #hamburg {
@@ -164,7 +166,11 @@ body {
     translate: -200%;
     bottom: 3rem;
 }
-
+.otherProjects {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 50%;
+}
 .emailImg {
     left: -4rem;
 }
@@ -172,9 +178,26 @@ body {
     position: absolute;
     padding-left: 3rem;
 }
-
+.writing {
+    position: absolute;
+    margin-left: 49%;
+}
+.web{
+    position: absolute;
+    margin-top: 25%;
+}
 .aboutMe p {
     text-align: center;
+}
+.aboutMe{
+    text-overflow: ellipsis;
+    width: 20px;
+    padding-bottom: 3rem;
+    white-space: nowrap;
+}
+.aboutMe p h1 {
+    position: relative;
+    right: 3rem;
 }
 .abtMe {
     position: relative;
@@ -191,14 +214,30 @@ body {
     transition: .5s;
 }
 .pill:hover {
-    background-color: #fff;
-    
+    background-color: #337ab7;
+    color: #fff; 
+    cursor: pointer; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none; 
 }
 .linkedin{
     width: 30%;
 }
-
-
+.web {
+    width: 30px;
+}
+.info {
+    position: absolute;
+    height: 15rem;
+}
+.me {
+    height: 15rem;
+    position: absolute;
+    right: 15rem;
+    border-style: solid;
+    border-radius: 100%;
+    width: 15;
+}
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -237,6 +276,6 @@ body {
     from {}
 
     to {
-        box-shadow: 0 0 50px 15px #000000;
+        box-shadow: 0 0 190px rgba(0, 0, 0, 0.2);
     }
 }
