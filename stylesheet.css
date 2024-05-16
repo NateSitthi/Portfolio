@@ -23,6 +23,7 @@
 #hamburg {
     position: absolute;
     font-size: 80px;
+    cursor: pointer;
 
 }
 
@@ -144,7 +145,14 @@ body {
     border-style: solid;
     border-radius: 17px;
 }
-
+.twist {
+    position: absolute;
+    right: 10vw !important;
+    overflow: hidden;
+}
+.twistImage {
+    opacity: 30% !important;
+}
 .rexI {
     position: absolute;
     width: 100%;
@@ -173,6 +181,7 @@ body {
     position: relative;
     text-decoration-line: none;
     margin-bottom: 100px;
+    font-size: large !important;
 
 }
 
@@ -206,7 +215,7 @@ body {
     top: 3em;
     padding: 4rem;
     position: relative;
-    text-decoration-line: none;
+    text-decoration-line: none !important;
 }
 .essays h2 {
     position: relative;
@@ -288,8 +297,12 @@ body {
     height: 50px;
     margin-bottom: 2rem;
     transition: .5s;
+    text-decoration-line: none;
 }
-
+.conds {
+    display: flex !important; 
+    flex-flow: row wrap !important;
+}
 .pill:hover {
     background-color: #337ab7;
     color: #fff;
@@ -357,14 +370,14 @@ body {
 }
 
 .hobbies {
-    position: absolute;
+    position: relative;
     text-align: center;
     border-style: solid;
     border-radius: 16px;
     width: 50%;
     height: 20%;
-    padding-top: 5rem;
-    right: 33.5rem;
+    left: 50%;
+    transform: translateX(-52%);
 }
 @media screen and (max-width: 480px) {
     .introduction {
