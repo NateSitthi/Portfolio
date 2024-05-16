@@ -7,7 +7,7 @@
 
 #sidebar {
     width: calc(100/6)vw;
-    position: absolute;
+    position: relative;
     display: none;
     /* display: flex; */
     flex-flow: row;
@@ -47,14 +47,14 @@ body {
 }
 
 #indivSide a {
-    position: absolute;
+    position: relative;
 
 }
 
 
 .animate-left {
 
-    position: absolute;
+    position: relative;
     animation: animateleft 2s forwards;
 }
 
@@ -96,6 +96,7 @@ body {
     position: absolute;
     padding-bottom: 18rem;
     top: 3rem;
+    cursor: default !important;
 }
 
 .skills {
@@ -103,6 +104,7 @@ body {
     padding-bottom: 12vw;
     right: 20rem;
     bottom: 20.5rem;
+    cursor: default !important;
 }
 
 .volunteer {
@@ -110,6 +112,7 @@ body {
     padding-bottom: 12vw;
     left: 20rem;
     bottom: 41rem;
+    cursor: default !important;
 }
 
 .rexL {
@@ -119,7 +122,7 @@ body {
     bottom: 5rem;
     font-size: large;
     border-style: solid;
-    border-radius: 2rem;
+    border-radius: 16px;
     text-decoration: none;
     background-color: white;
     transition: 0, 5s forwards;
@@ -202,8 +205,18 @@ body {
 .essays {
     top: 3em;
     padding: 4rem;
-    position: absolute;
+    position: relative;
     text-decoration-line: none;
+}
+.essays h2 {
+    position: relative;
+    bottom: 3rem;
+    text-align: center;
+}
+.essays p {
+    position: relative;
+    text-align: center;
+    bottom: 3rem;
 }
 
 .portWeb {
@@ -353,7 +366,17 @@ body {
     padding-top: 5rem;
     right: 33.5rem;
 }
-
+@media screen and (max-width: 480px) {
+    .introduction {
+        position: relative;
+        width: auto;
+        padding-right: 15rem;
+        height: 15vw;
+    }
+    .introduction p {
+        text-align: center;
+    }
+}
 
 @keyframes fadeInAnimation {
     0% {
